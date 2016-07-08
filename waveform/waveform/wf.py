@@ -10,7 +10,8 @@ def makeArrayToSend(b0, F_Burst_Time, Sampling_Freq, Burst_Width, Measuring_Time
     gamma_xe = 11.77673923 # (10^6 rad*s^-1*T^-1)/(2Pi)=MHz/T - REF: M. Pfeffer, J. Magn. Res., Vol 108, 1994
     gamma_he = 32.4341008  #  REF Flowers, Metrologia, Vol 30, 1993
     
-    volt_per_muT = 17.29                                 ###volt_per_muT = 2*17.29 # V_pp / muT (Rafael)
+    volt_per_muT = 53.35   #JM: Al-coils approx. value 53.35 V/muT with SQUID
+    # for the wooden coils: 17.29  ##volt_per_muT = 2*17.29 # V_pp / muT (Rafael)
     
     he_freq = gamma_he*b0_field_strength #[Hz]
     xe_freq = gamma_xe*b0_field_strength 
